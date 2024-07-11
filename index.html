@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md" style="margin: 5px;">
+        <h1 class="text-2xl font-bold mb-4">Quiz</h1>
+        <form id="quiz-form-1" class="space-y-4">
+            <div>
+                <p class="text-lg">Wie heißt dein Hund?</p>
+                <div class="mt-2">
+                    <label class="flex items-center mb-2">
+                        <input type="radio" name="answer" value="delta" class="mr-2">
+                        <span>Delta</span>
+                    </label>
+                    <label class="flex items-center mb-2">
+                        <input type="radio" name="answer" value="lucy" class="mr-2">
+                        <span>Lucy</span>
+                    </label>
+                    <label class="flex items-center mb-2">
+                        <input type="radio" name="answer" value="maria" class="mr-2">
+                        <span>Maria</span>
+                    </label>
+                    <label class="flex items-center mb-2">
+                        <input type="radio" name="answer" value="bobby" class="mr-2">
+                        <span>Bobby</span>
+                    </label>
+
+                    <form id="quiz-form-2" class="space-y-4">
+                        <div>
+                            <p class="text-lg">Wie heißt deine Katze?</p>
+                            <div class="mt-2">
+                                <label class="flex items-center mb-2">
+                                    <input type="radio" name="answer" value="sam" class="mr-2">
+                                    <span>Sam</span>
+                                </label>
+                                <label class="flex items-center mb-2">
+                                    <input type="radio" name="answer" value="lucy" class="mr-2">
+                                    <span>Lucy</span>
+                                </label>
+                                <label class="flex items-center mb-2">
+                                    <input type="radio" name="answer" value="harry" class="mr-2">
+                                    <span>Harry</span>
+                                </label>
+                                <label class="flex items-center mb-2">
+                                    <input type="radio" name="answer" value="josef" class="mr-2">
+                                    <span>Josef</span>
+                                </label>
+                            </div>
+                </div>
+        </form>
+
+        <button type="button" onclick="checkAnswer()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Antwort überprüfen</button>
+        <p id="result" class="mt-4 text-lg"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
