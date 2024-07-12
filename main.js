@@ -36,7 +36,7 @@ function checkAnswer() {
 
 
 trueAnswer(selectedAnswer,"delta")
-trueAnswer(selectedAnswer2,"Sam")
+trueAnswer(selectedAnswer2,"sam")
 
 console.log(score)
 
